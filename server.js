@@ -22,7 +22,7 @@ app.get("/search", (req, res) => {
 
 app.get("/filter", (req, res) => {
     console.log(req.query);
-    res.send(`Category: ${req.query.sort}`)
+    res.send(`Category: ${req.query.category} Sort: ${req.query.sort}`)
 })
 
 app.get("/products/:id", (req, res) => {
